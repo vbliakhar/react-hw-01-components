@@ -1,8 +1,8 @@
 import "./FriendList.scss";
-const FriendList = (props) => {
+const FriendList = ({ friends }) => {
   return (
     <ul className="friend-list">
-      {props.friends.map((friend) => (
+      {friends.map((friend) => (
         <li className="item" key={friend.id}>
           <span
             className="status"
