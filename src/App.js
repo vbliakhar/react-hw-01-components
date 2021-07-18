@@ -10,6 +10,7 @@ import TransactionHistory from "./сomponents/TransactionHistory/TransactionHist
 function App() {
   return (
     <div className="App">
+      <h1>Task 1</h1>
       <Profile
         name={user.name}
         tag={user.tag}
@@ -17,8 +18,11 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <h1>Task 2</h1>
       <Statistics title="Upload stats" stats={statisticalData} />
+      <h1>Task 3</h1>
       <FriendList friends={friends} />
+      <h1>Task 4</h1>
       <TransactionHistory items={transactions} />
     </div>
   );

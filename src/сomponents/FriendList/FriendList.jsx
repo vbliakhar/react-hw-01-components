@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./FriendList.scss";
 const FriendList = ({ friends }) => {
   return (
@@ -21,5 +22,12 @@ const FriendList = ({ friends }) => {
       ))}
     </ul>
   );
+};
+FriendList.propsTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ),
 };
 export default FriendList;
